@@ -1,0 +1,283 @@
+{
+	"NiHeader": {
+		"Magic": "Gamebryo File Format, Version 20.2.0.7",
+		"Version": "20.2.0.7",
+		"Endian Type": "ENDIAN_LITTLE",
+		"User Version": "12",
+		"Num Blocks": "7",
+		"User Version 2": "83",
+		"Export Info": {
+			"Author": "dlee",
+			"Process Script": "",
+			"Export Script": " PE Static Art"
+		},
+		"Block Types": [
+			"BSFadeNode",
+			"BSXFlags",
+			"NiBillboardNode",
+			"NiTriShape",
+			"NiTriShapeData",
+			"BSEffectShaderProperty",
+			"NiAlphaProperty"
+		],
+		"Block Type Index": [
+			"BSFadeNode",
+			"BSXFlags",
+			"NiBillboardNode",
+			"NiTriShape",
+			"NiTriShapeData",
+			"BSEffectShaderProperty",
+			"NiAlphaProperty"
+		],
+		"Block Size": [
+			"88",
+			"8",
+			"86",
+			"97",
+			"816",
+			"133",
+			"15"
+		],
+		"Num Strings": "36",
+		"Max String Length": "24",
+		"Strings": [
+			"ApoRespecEnchanting",
+			"BSX",
+			"BillboardHelper17",
+			"PortalFade34",
+			"cImage30",
+			"StarRotationController34",
+			"AnimationController17",
+			"BillboardStar205",
+			"sGlow412",
+			"Plane206",
+			"sGlow413",
+			"BillboardStar206",
+			"Plane207",
+			"sGlow414",
+			"sGlow415",
+			"BillboardStar207",
+			"sGlow410",
+			"Plane208",
+			"sGlow416",
+			"BillboardStar208",
+			"Plane210",
+			"sGlow417",
+			"sGlow418",
+			"BillboardStar209",
+			"Plane211",
+			"sGlow419",
+			"sGlow420",
+			"BillboardStar210",
+			"sGlow411",
+			"Plane209",
+			"sGlow421",
+			"Collision17",
+			"Collision17:0",
+			"g_Ripples17",
+			"g_Refraction17",
+			"g_Refraction17:0"
+		],
+		"Num Groups": "0"
+	},
+	"0 BSFadeNode": {
+		"Name": "ApoRespecEnchanting",
+		"Extra Data List": [
+			"1 BSXFlags \"BSX\""
+		],
+		"Controller": "None",
+		"Flags": "14",
+		"Transform": {
+			"Translation": "0.000000 0.000000 0.000000",
+			"Rotation": "-0.000000 0.000000 -0.000000",
+			"Scale": "1.000000"
+		},
+		"Collision Object": "None",
+		"Children": [
+			"2 NiBillboardNode \"BillboardHelper17\""
+		],
+		"Effects": []
+	},
+	"1 BSXFlags": {
+		"Name": "BSX",
+		"Flags": "Animated | Havok | Complex | Articulated"
+	},
+	"2 NiBillboardNode": {
+		"Name": "BillboardHelper17",
+		"Extra Data List": [],
+		"Controller": "None",
+		"Flags": "14",
+		"Transform": {
+			"Translation": "0.000000 0.000000 0.000000",
+			"Rotation": "90.000000 0.000000 -0.000000",
+			"Scale": "1.000000"
+		},
+		"Collision Object": "None",
+		"Children": [
+			"3 NiTriShape \"cImage30\""
+		],
+		"Effects": [],
+		"Billboard Mode": "ALWAYS_FACE_CENTER"
+	},
+	"3 NiTriShape": {
+		"Name": "cImage30",
+		"Extra Data List": [],
+		"Controller": "None",
+		"Flags": "14",
+		"Transform": {
+			"Translation": "0.000244 -0.000122 -0.000366",
+			"Rotation": "-90.000007 0.000000 -0.000000",
+			"Scale": "1.000000"
+		},
+		"Collision Object": "None",
+		"Data": "4 NiTriShapeData",
+		"Skin Instance": "None",
+		"Material Data": {
+			"Num Materials": "0",
+			"Material Name": [],
+			"Material Extra Data": [],
+			"Active Material": "0",
+			"Material Needs Update": "no"
+		},
+		"Shader Property": "5 BSEffectShaderProperty",
+		"Alpha Property": "6 NiAlphaProperty"
+	},
+	"4 NiTriShapeData": {
+		"Group ID": "0",
+		"Num Vertices": "10",
+		"Keep Flags": "0",
+		"Compress Flags": "0",
+		"Has Vertices": "yes",
+		"Vertices": [
+			"-10.264634 -0.000015 -31.058554",
+			"12.550820 -0.000015 -31.554111",
+			"11.078343 -0.000015 -18.684464",
+			"-17.767151 -0.000015 -12.129437",
+			"13.729218 -0.000015 -5.070951",
+			"-11.168534 -0.000015 1.327824",
+			"17.767162 -0.000015 16.297808",
+			"-12.843331 -0.000015 16.241381",
+			"6.590841 -0.000015 31.554110",
+			"-5.143907 -0.000015 26.707582"
+		],
+		"Vector Flags": "Has_UV | Has_Tangents",
+		"Material CRC": "0",
+		"Has Normals": "yes",
+		"Normals": [
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 0.000000",
+			"0.000000 -1.000000 -0.000000"
+		],
+		"Tangents": [
+			"0.010523 0.000000 -0.999945",
+			"0.012301 0.000000 -0.999924",
+			"0.008994 0.000000 -0.999960",
+			"0.004061 0.000000 -0.999992",
+			"0.011958 0.000000 -0.999929",
+			"0.040906 0.000000 -0.999163",
+			"0.067680 0.000000 -0.997707",
+			"0.065637 0.000000 -0.997844",
+			"0.052964 0.000000 -0.998596",
+			"0.023257 0.000000 -0.999730"
+		],
+		"Bitangents": [
+			"0.999945 0.000000 0.010523",
+			"0.999924 0.000000 0.012301",
+			"0.999960 0.000000 0.008994",
+			"0.999992 0.000000 0.004061",
+			"0.999929 0.000000 0.011958",
+			"0.999163 0.000000 0.040906",
+			"0.997707 0.000000 0.067680",
+			"0.997844 0.000000 0.065637",
+			"0.998596 0.000000 0.052964",
+			"0.999729 0.000000 0.023257"
+		],
+		"Center": "0.000006 -0.000015 -0.000001",
+		"Radius": "33.958576",
+		"Has Vertex Colors": "yes",
+		"Vertex Colors": [
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6",
+			"#FFFFFFA6"
+		],
+		"UV Sets": [
+			[
+				"0.427856 0.840865",
+				"0.515970 0.846699",
+				"0.507253 0.749835",
+				"0.400033 0.698972",
+				"0.520693 0.647012",
+				"0.425197 0.600975",
+				"0.528316 0.511235",
+				"0.419227 0.491688",
+				"0.492096 0.379035",
+				"0.446779 0.413705"
+			]
+		],
+		"Consistency Flags": "CT_STATIC",
+		"Additional Data": "None",
+		"Num Triangles": "8",
+		"Num Triangle Points": "24",
+		"Has Triangles": "yes",
+		"Triangles": [
+			"0 1 2",
+			"2 3 0",
+			"3 2 4",
+			"4 5 3",
+			"5 4 6",
+			"6 7 5",
+			"7 6 8",
+			"8 9 7"
+		],
+		"Num Match Groups": "0",
+		"Match Groups": []
+	},
+	"5 BSEffectShaderProperty": {
+		"Name": "",
+		"Extra Data List": [],
+		"Controller": "None",
+		"Shader Flags 1": "Vertex_Alpha | ZBuffer_Test",
+		"Shader Flags 2": "Vertex_Colors",
+		"UV Offset": "0.000000 0.000000",
+		"UV Scale": "1.000000 1.000000",
+		"Source Texture": "textures\\interface\\intconstellationimages.dds",
+		"Texture Clamp Mode": "3",
+		"Lighting Influence": "255",
+		"Env Map Min LOD": "0",
+		"Unknown Byte": "0",
+		"Falloff Start Angle": "0.990268",
+		"Falloff Stop Angle": "0.984808",
+		"Falloff Start Opacity": "1.000000",
+		"Falloff Stop Opacity": "0.000000",
+		"Emissive Color": "#1B64D1FF",
+		"Emissive Multiple": "2.000000",
+		"Soft Falloff Depth": "100.000000",
+		"Grayscale Texture": ""
+	},
+	"6 NiAlphaProperty": {
+		"Name": "",
+		"Extra Data List": [],
+		"Controller": "None",
+		"Flags": "4109",
+		"Threshold": "128"
+	},
+	"NiFooter": {
+		"Roots": [
+			"0 BSFadeNode \"ApoRespecEnchanting\""
+		]
+	}
+}
