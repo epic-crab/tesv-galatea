@@ -1,15 +1,13 @@
-scriptname GLT_Shop_ArmorScript extends ObjectReference
+scriptname GLT_Shop_ArmorScript extends GLT_Shop_ItemScript
 
 GLT_Disappearable Property Bust Auto
 Armor Property Helmet Auto
 Armor Property ThisArmor Auto
-Armor Property Rags Auto
-Actor Property PlayerRef Auto
 Keyword Property ArmorLight Auto
 Keyword Property ArmorHeavy Auto
 GLT_ArmorShopScript property shop auto
 
-Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldContainer)
+function addToPlayer()
 	PlayerRef.addItem(Helmet, 1, true)
 	if(ThisArmor.hasKeyword(ArmorHeavy))
 		shop.HeavyArmorMade = true
@@ -19,8 +17,5 @@ Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldCo
 		shop.RobesMade = true
 	endIf
 	Bust.GoToState("vanished")
-	if(PlayerRef.isEquipped(Rags))
-		PlayerRef.equipItem(ThisArmor)
-		PlayerRef.removeItem(Rags, 1, true)
-	endIf
-endEvent
+	replaceRags(ThisArmor)
+endFunction

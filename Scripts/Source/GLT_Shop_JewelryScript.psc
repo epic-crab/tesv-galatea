@@ -1,8 +1,7 @@
-Scriptname GLT_Shop_JewelryScript extends ObjectReference  
+Scriptname GLT_Shop_JewelryScript extends GLT_Shop_ItemScript  
 
 Armor Property ThisArmor Auto
-Actor Property PlayerRef Auto
 
-Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldContainer)
+function addToPlayer()
 	PlayerRef.equipItem(ThisArmor)
-endEvent
+endFunction

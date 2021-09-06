@@ -1,11 +1,11 @@
-Scriptname GLT_Shop_SupplyScript extends ObjectReference  
+Scriptname GLT_Shop_SupplyScript extends GLT_Shop_ItemScript  
 
 GLT_Disappearable Property Display Auto
 GLT_SupplyShopScript Property shop Auto
 int property thisItem = -1 Auto
 {torch, pickaxe, woodcutter's axe}
 
-Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldContainer)
+function addToPlayer()
 	if(thisItem == 0)
 		shop.TorchMade = true
 	elseif(thisItem == 1)
@@ -14,4 +14,4 @@ Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldCo
 		shop.WoodAxeMade = true
 	endIf
 	Display.GoToState("vanished")
-endEvent
+endFunction

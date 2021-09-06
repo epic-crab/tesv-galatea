@@ -45,3 +45,11 @@ endFunction
 bool function filter(Location loc)
 	return false
 endFunction
+
+;convenience function to avoid duplicating this code in every background
+function transferStartingItems(ObjectReference ref = None)
+	if(ref == None)
+		ref = GLTQ01_CharacterCreatorQuest.PlayerRef
+	endIf
+	GLTQ01_CharacterCreatorQuest.Fragments.TemporaryHoldingContainer.removeAllItems(ref)
+endFunction

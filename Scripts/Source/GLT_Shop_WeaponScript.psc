@@ -1,24 +1,13 @@
-Scriptname GLT_Shop_WeaponScript extends ObjectReference  
+Scriptname GLT_Shop_WeaponScript extends GLT_Shop_ItemScript  
 
 GLT_Disappearable Property Display Auto
 Weapon Property ThisWeapon Auto
 Armor Property ThisShield Auto
-Weapon Property Unarmed Auto
-Actor Property PlayerRef Auto
 GLT_WeaponShopScript property shop auto
-EquipSlot Property BothHands Auto
 
 Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldContainer)
 	if(ThisWeapon)
-		if(ThisWeapon.getEquipType() == BothHands && !HasEquipped() && !HasEquipped(true)) ; 2H weapon or bow
-			PlayerRef.EquipItem(ThisWeapon)
-		else ; 1H weapon
-			if(!HasEquipped())
-				PlayerRef.EquipItem(ThisWeapon)
-			elseif(!HasEquipped(true))
-				PlayerRef.EquipItemEx(ThisWeapon, 2)
-			endIf
-		endIf
+		equipNewItem(ThisWeapon)
 		if(ThisWeapon.IsBattleAxe())
 			shop.BattleaxeAxeMade = true
 		elseif(ThisWeapon.IsBow())
@@ -39,15 +28,8 @@ Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldCo
 			shop.StaffMade = true
 		endIf
 	else
-		if(!HasEquipped(true))
-			PlayerRef.EquipItem(ThisShield)
-		endIf
+		equipNewItem(ThisShield)
 		shop.ShieldMade = true
 	endIf
 	Display.goToState("vanished")
 endEvent
-
-bool function HasEquipped(bool left = false)
-	Form f = PlayerRef.getEquippedObject(1 - (left as int))
-	return (f && f != Unarmed)
-endFunction

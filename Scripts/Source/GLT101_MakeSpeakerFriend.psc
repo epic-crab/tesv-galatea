@@ -2,25 +2,17 @@
 ;NEXT FRAGMENT INDEX 1
 Scriptname GLT101_MakeSpeakerFriend Extends TopicInfo Hidden
 
-;BEGIN FRAGMENT Fragment_0
-function Fragment_0(ObjectReference akSpeakerRef)
-;BEGIN CODE
-MQ102RiverwoodFriend.forceRefTo(akSpeakerRef)
-getOwningQuest().setObjectiveDisplayed(25, false)
-MQ102RiverwoodFriend.getOwningQuest().setObjectiveCompleted(10)
-;END CODE
-endFunction
-;END FRAGMENT
-
 ;BEGIN FRAGMENT Fragment_1
-function Fragment_1(ObjectReference akSpeakerRef)
+Function Fragment_1(ObjectReference akSpeakerRef)
+Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-getOwningQuest().setStage(26)
-getOwningQuest().setStage(100)
+MQ102RiverwoodFriend.forceRefTo(akSpeaker)
 MQ102RiverwoodFriend.getOwningQuest().setStage(30)
-MQ102RiverwoodFriend.getOwningQuest().setStage(50)
+getOwningQuest().setObjectiveCompleted(25)
+getOwningQuest().setObjectiveDisplayed(30, false)
+getOwningQuest().setStage(100)
 ;END CODE
-endFunction
+EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment

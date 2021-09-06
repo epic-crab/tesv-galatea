@@ -20,11 +20,13 @@ ref.addToMap(true)
 if(ref.getLinkedRef())
 ref = ref.getLinkedRef()
 endIf
-Game.getPlayer().moveTo(ref)
+PlayerRef.moveTo(ref)
 
-((self as Quest) as GLT_BackgroundQuest).GLTQ01_CharacterCreatorQuest.Fragments.TemporaryHoldingContainer.removeAllItems(Game.getPlayer())
+((self as Quest) as GLT_BackgroundQuest).transferStartingItems()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+Actor Property PlayerRef Auto

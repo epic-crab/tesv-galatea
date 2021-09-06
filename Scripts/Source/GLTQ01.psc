@@ -75,6 +75,7 @@ ReferenceAlias Property StartingGearDump Auto
 GLT_HelgenStartingGearDump Property HelgenDump Auto
 ObjectReference Property HelgenPostChargenMarker Auto
 
+GLT_FactionMonitors Property GLTQ001_FactionMonitors Auto
 Quest Property GLTQ002 Auto
 Quest Property MirmulnirHandler Auto
 
@@ -405,6 +406,7 @@ endFunction
 function galateaStartGame()
 	Game.DisablePlayerControls(abMovement = true, abFighting = true, abCamSwitch = true, abLooking = true, abSneaking = true, abMenu = true, abJournalTabs = true)
 	setStage(15)
+	GLTQ001_FactionMonitors.start()
 	SelectedBackground.start()
 	while(getStage() < 16)
 		Utility.wait(1.0)
